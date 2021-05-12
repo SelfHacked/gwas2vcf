@@ -16,6 +16,7 @@ install_requires = [
     "biopython==1.72",
     "marshmallow==2.18.1",
     "numpy==1.15.4",
+    "vgraph @ git+git://github.com/SelfHacked/vgraph@v1.4.0#egg=vgraph",
 ]
 setup_requires = ["setuptools_scm==1.15.0", "setuptools_scm_git_archive==1.0"]
 tests_require = ["pytest==5.3.5"]
