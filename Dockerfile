@@ -7,9 +7,9 @@ COPY . /app
 WORKDIR /app
 
 # install python dependencies
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
-RUN pip install git+git://github.com/bioinformed/vgraph@v1.4.0#egg=vgraph
+RUN pip install Cython
+# install gwas2vcf library
+RUN pip install .
 
 # launch app
-CMD ["python", "main.py"]
+CMD ["gwas2vcf"]
