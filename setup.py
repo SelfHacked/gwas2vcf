@@ -7,9 +7,9 @@ import sys
 from Cython.Distutils import build_ext
 from setuptools import setup
 
-if sys.version_info < (3, 8):
+if sys.version_info < (3, 7):
     sys.exit(
-        "Sorry, Python 3.8 or newer is required to install and run gwas2vcf")
+        "Sorry, Python 3.7 or newer is required to install and run gwas2vcf")
 
 install_requires = [
     "pysam==0.15.2",
